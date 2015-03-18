@@ -4,14 +4,22 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<%@page import="com.gisa.framework.utils.Utils"%>
+<%@page import="com.gisa.framework.helper.Include"%>
+<%@page import="com.gisa.framework.utils.Constantes"%>
+<%
+    String basePath = Constantes.WEBROOT;
+%>
 <html>
     <head>
-        <title>.::Vinculación Universidades::.</title>
+        <title>.::Vinculacion Universidades::.</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="plugins/bootstrap 3.3.2/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="plugins/dataTables/dataTables.bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="plugins/dataTables/dataTables.responsive.css">
+        
+        <%= Include.getIncludeBootstrapCSS(basePath)%>
+        <%= Include.getIncludeDataTablesCSS(basePath)%>
+        <%= Include.getIncludeBootstrapJS(basePath)%>
+        <%= Include.getIncludeDataTablesJS(basePath)%>
         <style type="text/css" class="init">
 	body { font-size: 140% }
         
@@ -20,15 +28,13 @@ and open the template in the editor.
 		white-space: nowrap;
 	}
 	</style>
-        <script type="text/javascript" language="javascript" src="plugins/jQuery/jquery-1.11.1.min.js"></script>
-        <script type="text/javascript" language="javascript" src="plugins/jQuery/dataTables.bootstrap.js"></script>
-        <script type="text/javascript" language="javascript" src="plugins/jQuery/dataTables.responsive.min.js"></script>
-        <script type="text/javascript" language="javascript" src="plugins/jQuery/jquery.dataTables.min.js"></script>
+        
         <script type="text/javascript" class="init">
         $(document).ready(function() {
                 $('#example').DataTable();
         } );
         </script>
+        
     </head>
     <body>
         <div>Prueba para la dataTable</div>
