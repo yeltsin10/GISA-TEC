@@ -12,7 +12,7 @@ public class Constantes extends Despachador {
     /**
      * *<br><b>WEBROOT</b>  Contiene el valor del contexto del sistema ejemplo: "/tienda/"
      **/
-    public static String WEBROOT = "/FrameworkWeb/";
+    public static String WEBROOT = "/VinculacionGISA/";
     /**
      * *<br><b>ENMTTO</b>  Contiene el valor de true o false, indica si el sistema se encuentra en mantenimiento"
      **/

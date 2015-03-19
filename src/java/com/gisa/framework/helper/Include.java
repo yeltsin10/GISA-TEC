@@ -214,4 +214,10 @@ public class Include {
     public static String getIncludeSocialButtonsCSS(String basePath){
         return "\n\t\t<link rel=\"STYLESHEET\" href=\"" + basePath + "views/cssFramework_B3.1.1/pluginsBootstrap3.1.1/social-buttons/social-buttons.css\">\n";
     }
+    /**
+     * Prueba del metodo para el Css
+     */
+    public static String getLoginCSS(String basePath){
+        return"\n\t\t<link rel=\"stylesheet\" href\""+basePath+"css/login.css\">\n";
+    }
 }

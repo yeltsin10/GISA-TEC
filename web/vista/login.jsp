@@ -6,17 +6,17 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="com.gisa.framework.utils.Constantes"%>
+<%@page import="com.gisa.framework.helper.Include" %>
 <%
     String basePath = Constantes.WEBROOT;
 %>
 <!DOCTYPE html>
 <html lang="en"> <!--<![endif]-->
-<head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>.::Vinculacion GISA::.</title>
-  <link rel="stylesheet" href="css/login.css">
-</head>
+<link rel="stylesheet" href="css/login.css">
 <body>
   <form method="post" action="vista/tablas.jsp" class="login">
     <p>
