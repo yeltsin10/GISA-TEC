@@ -15,11 +15,14 @@ and open the template in the editor.
         <title>.::Vinculacion Universidades::.</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         
         <%= Include.getIncludeBootstrapCSS(basePath)%>
         <%= Include.getIncludeDataTablesCSS(basePath)%>
         <%= Include.getIncludeBootstrapJS(basePath)%>
         <%= Include.getIncludeDataTablesJS(basePath)%>
+        <%= Include.getSidebarCSS(basePath)%>
+        <%= Include.getSidebarJS(basePath)%>
         <style type="text/css" class="init">
 	body { font-size: 140% }
         
@@ -34,9 +37,38 @@ and open the template in the editor.
                 $('#example').DataTable();
         } );
         </script>
-        
+        <link rel="stylesheet" href="css/sidebar.css">
     </head>
     <body>
+        <!-- top navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    	<div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#">Bootstrap Holo</a>
+    	</div>
+    </nav>
+      
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-left">
+        
+        <!--sidebar-->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div data-spy="affix" data-offset-top="45" data-offset-bottom="90">
+            <ul class="nav" id="sidebar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#section1">Section 1</a></li>
+              <li><a href="#section2">Section 2</a></li>
+              <li><a href="#section3">Section 3</a></li>
+              <li><a href="#">Holo Theme</a></li>
+            </ul>
+           </div>
+        </div><!--/sidebar-->
+        
+        <div class="col-md-9">
         <div>Prueba para la dataTable</div>
         <table id="example" class="table table-striped table-hover dt-responsive" cellspacing="0" width="100%">
         <thead>
@@ -683,5 +715,6 @@ and open the template in the editor.
             </tr>
         </tbody>
     </table>
+        </div>
     </body>
 </html>

@@ -220,4 +220,22 @@ public class Include {
     public static String getLoginCSS(String basePath){
         return"\n\t\t<link rel=\"stylesheet\" href\""+basePath+"css/login.css\">\n";
     }
+    /**
+     * Genera el include para cargar el diseno del sidebar
+     * Este include debe ir en la parte superior del JSP
+     * @param basePath Constante.WEBROOT
+     * @retunr importa el css que se utiliza para el diseno del sidebar.
+     */
+    public static String getSidebarCSS(String basePath){
+        return "\n\t\t<link rel\"stylesheet\" href\""+basePath+"css/sidebar.css\">\n";
+    }
+    /**
+     * Genera el include para cargar el JS que se utilizara para el sidebar
+     * Este include debe de ir en la parte superior del JSP
+     * @param basePath Constante.WEBROOT
+     * @return importa el js que se utliza en el sidebar.
+     */
+    public static String getSidebarJS(String basePath){
+            return "\n\t\t<script type=\"text/javascript\" src=\"" + basePath + "js/sidebar.js\"></script>\n";
+    }
 }
