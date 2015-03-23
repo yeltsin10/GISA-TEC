@@ -136,7 +136,7 @@
                       	<div class="row">
                           
                          <!-- main col left --> 
-                         <div class="col-sm-5">
+                         
                            
                               <div class="panel panel-default">
                                   
@@ -328,8 +328,7 @@
                         
                       <hr>
                         
-                      
-                    </div><!-- /col-9 -->
+                    
                 </div><!-- /padding -->
             </div>
             <!-- /main -->

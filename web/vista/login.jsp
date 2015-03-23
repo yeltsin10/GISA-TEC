@@ -18,7 +18,7 @@
   <title>.::Vinculacion GISA::.</title>
 <link rel="stylesheet" href="css/login.css">
 <body>
-  <form method="post" action="vista/tablas.jsp" class="login">
+    <form method="post" action="<%=basePath%>vista/tablas.jsp" class="login">
     <p>
       <label for="login">Email:</label>
       <input type="text" name="login" id="login" value="name@example.com">
