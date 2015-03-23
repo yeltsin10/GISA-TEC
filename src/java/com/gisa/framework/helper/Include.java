@@ -227,7 +227,7 @@ public class Include {
      * @retunr importa el css que se utiliza para el diseno del sidebar.
      */
     public static String getSidebarCSS(String basePath){
-        return "\n\t\t<link rel\"stylesheet\" href\""+basePath+"css/sidebar.css\">\n";
+        return "<link href=\""+basePath+"css/styles.css\" rel=\"stylesheet\">";
     }
     /**
      * Genera el include para cargar el JS que se utilizara para el sidebar
@@ -236,6 +236,6 @@ public class Include {
      * @return importa el js que se utliza en el sidebar.
      */
     public static String getSidebarJS(String basePath){
-            return "\n\t\t<script type=\"text/javascript\" src=\"" + basePath + "js/sidebar.js\"></script>\n";
+            return "\n\t\t<script type=\"text/javascript\" src=\"" + basePath + "js/scripts.js\"></script>\n";
     }
 }
