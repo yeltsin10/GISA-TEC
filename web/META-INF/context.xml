@@ -1,3 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/VinculacionGISA"
-/>
+<Context antiJARLocking="true" path="/VinculacionGISA">
+  <Resource auth="Container" 
+  description="Pool de conexiones"
+  driverClassName="com.mysql.jdbc.Driver"
+  maxActive="2"
+  maxIdle="2"
+  maxWait="-1"
+  name="jdbc/datos"
+  password="TecMty"
+  type="javax.sql.DataSource"
+  url="jdbc:mysql://http://192.168.74.128/VinculacionPrueba"
+  username="root"
+  validationQuery="select 1"/>
+</Context>

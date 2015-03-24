@@ -24,11 +24,7 @@
         <%= Include.getIncludeDataTablesJS(basePath)%>
         <%= Include.getSidebarCSS(basePath)%>
         <%= Include.getSidebarJS(basePath)%>
-        <style type="text/css" class="init">
-
-	body { font-size: 140%; }
-
-	</style>
+        S
         <script type="text/javascript" class="init">
 
 $(document).ready(function() {
@@ -130,7 +126,7 @@ $(document).ready(function() {
                       
                         <!-- content -->                      
                       	<div class="row">
-                          
+                        <div class="panel panel-default">  
                         <!-- main col left --> 
                             <div>Prueba para la dataTable</div>
                             <table id="tabla" class="table table-striped table-bordered display responsive nowrap" width="100%" cellspacing="0">
@@ -618,6 +614,7 @@ $(document).ready(function() {
                             
                         
                         </div><!-- /padding -->
+                    </div>
                     </div>
                     <!-- /main -->
                 <!--</div>-->
